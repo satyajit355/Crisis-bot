@@ -1,6 +1,13 @@
 const Discord = require("discord.js");
-const client = new Discord.Client({ intents: 7753 });
+const client = new Discord.Client({ intents: [
+    Discord.Intents.FLAGS.GUILDS,
+    Discord.Intents.FLAGS.GUILD_MESSAGES, 
+    Discord.Intents.FLAGS.GUILD_MEMBERS, 
+    Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS
+  ]
+});
 const fs = require("fs");
+const mongoose = require("mongoose")
 const Prefix = "U";
 
 
@@ -14,19 +21,6 @@ fs.readdir("./events/discord", (_err, files) => {
     delete require.cache[require.resolve(`./events/discord/${file}`)];
   });
 });
-
-/* Load all events (giveaways based) */
-
-
-fs.readdir("./events/giveaways", (_err, files) => {
-  files.forEach((file) => {
-    if (!file.endsWith(".js")) return;
-    const event = require(`./events/giveaways/${file}`);
-    let eventName = file.split(".")[0];
-    console.log(`[Event]   🎉 Loaded: ${eventName}`);
-    client.giveawaysManager.on(eventName, (...file) => event.execute(...file, client)), delete require.cache[require.resolve(`./events/giveaways/${file}`)];
-  })
-})
 
 // Let commands be a new collection ( message commands )
 client.commands = new Discord.Collection();
