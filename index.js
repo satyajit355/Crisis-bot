@@ -65,4 +65,4 @@ fs.readdir("./slash/", (_err, files) => {
 
 
 // Login through the client
-client.login("ODczODEwMjUzNjkzNzE0NDgy.GhYR56.65sGWCEUdY_4nceNcEkhDq3_CBzwT6cXmLLMrQ");
+client.login("");
