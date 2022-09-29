@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ intents: 7753 });
 const fs = require("fs");
-const Prefix = "8383838";
+const Prefix = "U";
 
 
 fs.readdir("./events/discord", (_err, files) => {
