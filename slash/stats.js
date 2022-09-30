@@ -9,12 +9,12 @@ module.exports = {
     client.guilds.cache.forEach((guild) => {
       mcount += guild.memberCount;
     });
-    let invite = new MessageEmbed()
+    let stats = new MessageEmbed()
     .setTitle("Status")
     .setDescription(`**Servers:** ${scount}
 **Users:** ${mcount}`)
     .setColor('BLACK')
     
-    interaction.reply({ embeds: [invite]});
+    interaction.reply({ embeds: [stats]});
 }
 } 
