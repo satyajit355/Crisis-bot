@@ -18,7 +18,7 @@ module.exports = {
         iconURL: interaction.user.displayAvatarURL()
       })
 
- const giveaway = new MessageEmbed()
+ const moderation = new MessageEmbed()
   .setTitle("Moderation")
   .setColor('BLACK')
   .setDescription("Crisisbot's Moderation cmds")
@@ -40,7 +40,7 @@ module.exports = {
 
 
 
-    const general = new MessageEmbed()
+    const info = new MessageEmbed()
       .setTitle("Information")
       .setColor('BLACK')
   .setDescription("**crisisbot's info Commands**")
@@ -66,13 +66,13 @@ module.exports = {
         .setDisabled(state)
         .addOptions([{
                 label: `Moderation`,
-                value: `giveaway`,
+                value: `moderation`,
                 description: `Moderation Commands`,
                 emoji: `1020620119644315670`
             },
             {
                 label: `Info`,
-                value: `general`,
+                value: `info`,
                 description: `Informatiom Commands`,
                 emoji: `1020620281565413436`
             },
