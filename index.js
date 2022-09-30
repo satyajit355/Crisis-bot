@@ -57,7 +57,7 @@ fs.readdir("./slash/", (_err, files) => {
   });
 });
 
-mongoose.connect("mongodb+srv://varma:varma@cluster0.bfgazzv.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("paste your mongo URL", {
     useNewUrlParser: true,
     autoIndex: false,
     connectTimeoutMS: 10000,
