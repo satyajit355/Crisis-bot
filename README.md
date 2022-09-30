@@ -1,4 +1,4 @@
 # Crisis-bot
 
 A POWERFULL DISCORD BOT MADE BY VARMA (DISCORD TECH)
-Handler by - Zero 
+Command Handler Credits - Zero 
