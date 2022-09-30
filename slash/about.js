@@ -5,7 +5,7 @@ module.exports = {
     description: 'about Crisisbot',
     run: async (client, interaction) => {
     
-    let invite = new MessageEmbed()
+    let about = new MessageEmbed()
     .setTitle("Wanna Know About Crisis-Bot")
     .setDescription(`**Crisis-Bot** Is A Multifunctional Discord Bot, Which Had Builded An Trust Over 100 Server Being Verified, It Is Developed By Rtxeon And Varma`)
     .addFields(
@@ -15,6 +15,6 @@ module.exports = {
     )
     .setColor('BLACK')
     
-    interaction.reply({ embeds: [invite]});
+    interaction.reply({ embeds: [about]});
 }
 } 
