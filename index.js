@@ -57,6 +57,23 @@ fs.readdir("./slash/", (_err, files) => {
   });
 });
 
+mongoose.connect("mongodb+srv://varma:varma@cluster0.bfgazzv.mongodb.net/?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    autoIndex: false,
+    connectTimeoutMS: 10000,
+    family: 4,
+    useUnifiedTopology: true,
+})
+mongoose.connection.on('connected', () => {
+    console.log("[ DB LOG ] " + 'DATABASE CONNECTED');
+});
+mongoose.connection.on('err', (err) => {
+    console.log("[ DB LOG ] " + `Mongoose connection error: \n ${err.stack}` );
+});
+mongoose.connection.on('disconnected', () => {
+    console.log("[ DB LOG ] " + 'Mongoose disconnected');
+});
+
 
 // Login through the client
 client.login("");
