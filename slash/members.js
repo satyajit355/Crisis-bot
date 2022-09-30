@@ -4,11 +4,11 @@ module.exports = {
     name: 'members',
     description: ' check server memberscount',
     run: async (client, interaction) => {
-    let invite = new MessageEmbed()
+    let members = new MessageEmbed()
     .setTitle("Members")
     .setDescription(`** ${interaction.guild.memberCount}**`)
     .setColor('BLACK')
     .setTimestamp()
-    interaction.reply({ embeds: [invite]});
+    interaction.reply({ embeds: [members]});
 }
 } 
