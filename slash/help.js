@@ -99,10 +99,10 @@ module.exports = {
       });
 
     collector.on('collect', (interaction) => {
-      if (interaction.values[0] === "giveaway") {
-        interaction.update({ embeds:[giveaway], components: components(false) }).catch((e) => { });
-      } else if (interaction.values[0] === "general") {
-        interaction.update({ embeds: [general], components: components(false) }).catch((e) => { });
+      if (interaction.values[0] === "moderation") {
+        interaction.update({ embeds:[moderation], components: components(false) }).catch((e) => { });
+      } else if (interaction.values[0] === "info") {
+        interaction.update({ embeds: [info], components: components(false) }).catch((e) => { });
       } else if (interaction.values[0] === "embed") {
         interaction.update({ embeds: [embed], components: components(false) }).catch((e) => { });
 
