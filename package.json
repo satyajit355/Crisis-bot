@@ -1,0 +1,49 @@
+{
+  "name": "Crisis-bot",
+  "version": "3.0.0",
+  "description": "Crisis-bot bot created with discord.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Varma",
+  "license": "CC-Varma",
+  "keywords": [
+    "discord",
+    "giveaways",
+    "giveaway",
+    "bot",
+    "discord.js",
+    "discordjs"
+  ],
+  "dependencies": {
+    "@discordjs/voice": "^0.11.0",
+    "@iamtraction/google-translate": "^1.1.2",
+    "axios": "^0.27.2",
+    "canvas": "^2.10.1",
+    "discord-giveaways": "^5.0.1",
+    "discord-music-player": "^9.1.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.2",
+    "isomorphic-unfetch": "^3.1.0",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.6.1",
+    "ms": "^3.0.0-canary.1",
+    "node-canvas-with-twemoji-and-discord-emoji": "^1.2.1",
+    "node-emoji": "^1.11.0",
+    "node-superfetch": "^0.2.3",
+    "parsec": "^2.0.2",
+    "simply-djs": "^3.0.2",
+    "systeminformation": "^5.12.6"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://github.com/satyajit355/Crisis-bot"
+  },
+  "devDependencies": {
+    "node": "^16.9.1"
+  }
+}
