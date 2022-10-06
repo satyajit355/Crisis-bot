@@ -5,10 +5,11 @@ const client = new Discord.Client({ intents: [
     Discord.Intents.FLAGS.GUILD_MEMBERS, 
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS
   ]
-});
+}); //if u got some then change it to const client = new Discord.Client({ intents: 7753 });
 const fs = require("fs");
-const mongoose = require("mongoose")
-const Prefix = "U";
+const config = require("./config.json");
+const mongoose = require("mongoose");
+client.config = config;
 
 
 fs.readdir("./events/discord", (_err, files) => {
