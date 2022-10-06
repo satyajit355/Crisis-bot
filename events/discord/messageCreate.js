@@ -1,4 +1,4 @@
- const { EmbedBuilder, Message, Client, PermissionsBitField } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 module.exports = (client, message) => {
 
   
@@ -6,9 +6,13 @@ module.exports = (client, message) => {
     if (message.author.bot) return;
   
     // return if message does not match prefix (in command)
-    if (message.content.indexOf(client.Prefix) !== 0) return;
+    if (message.content.indexOf(client.config.prefix) !== 0) return;
    //When Someone Pings the Bot
 
+
+		
+
+		
     // Defining what are arguments and commands
     const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
