@@ -5,7 +5,7 @@ const client = new Discord.Client({ intents: [
     Discord.Intents.FLAGS.GUILD_MEMBERS, 
     Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS
   ]
-}); //if u got some then change it to const client = new Discord.Client({ intents: 7753 });
+}); //if u got some error then change it to const client = new Discord.Client({ intents: 7753 });
 const fs = require("fs");
 const config = require("./config.json");
 const mongoose = require("mongoose");
